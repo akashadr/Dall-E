@@ -25,7 +25,7 @@ const CreatePost: React.FC = () => {
 
       try {
         const response = await fetch(
-          'http://localhost:8080/api/v1/post',
+          'https://dall-e-clone-alh1.onrender.com/api/v1/post',
 
            {
           method: 'POST',
@@ -58,7 +58,7 @@ const CreatePost: React.FC = () => {
       try {
         setGeneratingImg(true);
         const response = await fetch(
-          'http://localhost:8080/api/v1/dalle',
+          'https://dall-e-clone-alh1.onrender.com/api/v1/dalle',
            {
           method: 'POST',
           headers: {
@@ -133,7 +133,7 @@ const CreatePost: React.FC = () => {
         </div>
         <div className="mt-10">
           <p className="mt-2 text-[#666e75] text-[14px]">
-           ** After this, you can share with community and see what others have created1 **
+           ** After this, you can share with community and see what others have created **
           </p>
           <button
             type="submit"
